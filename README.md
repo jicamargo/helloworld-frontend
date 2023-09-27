@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+<br>
+<div align='center'>
+	<h1>Hello world Front-end</h1>
+  </div>
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📗 Table of Contents
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-## Available Scripts
 
-In the project directory, you can run:
+# ⚙️ "Hello world" project as one app with Webpack <a name="about-project"></a>
 
-### `npm start`
+**Hello World Front-End" Welcome to the Hello World Front-End repository! This React-Redux application serves as the front-end for the Hello World project. It interacts with the Hello World Back-End, which is a Ruby on Rails (RoR) API serving greetings from a PostgreSQL database.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🖥️Integration with Back-End
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This front-end project is designed to seamlessly integrate with its counterpart *Back-end project* 👉🏽[helloworld_backend](https://github.com/jicamargo/helloworld_backend). 
+The Back-end, built with RoR and a PostgreSQL Database, serves greetings through and API endpoint. The front-end, built with React-Redux, interacts with the back-end to display a random greeting message.
+ 
+## 🛠 Built With <a name="built-with"></a>
 
-### `npm test`
+### Tech Stack <a name="tech-stack"></a>
+### Built With <a name="built-with"></a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Tech Stack <a name="tech-stack"></a>
 
-### `npm run build`
+- React JS
+- Redux
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Key Features <a name="key-features"></a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- This project serves as a basic example of how to set up a React-Redux front-end to interact with a Ruby on Rails API.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `npm run eject`
+<!-- GETTING STARTED -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 💻 Getting Started <a name="getting-started"></a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Node.js
+- NPM
+- React
+- Redux
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Setup
 
-## Learn More
+1. Clone the repository:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`git clone https://github.com/jicamargo/helloworld-frontend.git`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Install the dependencies:
 
-### Code Splitting
+`npm install`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Start the app in a bash terminal:
 
-### Analyzing the Bundle Size
+`npm start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5. Open your web browser and navigate to: http://localhost:3001/ to access the application. 
 
-### Making a Progressive Web App
+6. **Back End**: You need to have the back-end running in order to see the greetings, please visit the [helloworld_backend](https://github.com/jicamargo/helloworld_backend) repository and follow the instructions in the README.md file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Advanced Configuration
+<!-- AUTHORS -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 👥 Authors <a name="authors"></a>
 
-### Deployment
+👤 **JIC Software (Jorge Camargo)**
+- GitHub: [@jicamargo](https://github.com/jicamargo)
+- LinkedIn: [Jorge Camargo](https://www.linkedin.com/in/jorgecamargog/?locale=en_US)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<!-- FUTURE FEATURES -->
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Add a form to create new messages**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/jicamargo/helloworld-frontend/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+- If you like this project please give it a ⭐️!
+- You can pay a coffee ☕ for me [here](https://bmc.link/jicamargo)
+- You can also follow me 👍🏽 on Social Media.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank to [microverse](https://www.microverse.org/) For teaching me the database and more things.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
