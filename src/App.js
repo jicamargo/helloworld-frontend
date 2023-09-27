@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React, { useEffect } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import fetchGreeting from './actions/greetingActions';
+import Greeting from './components/Greeting';
 
-function App() {
+const App = ({ fetchGreeting }) => {
+  useEffect(() => {
+    fetchGreeting(); // get the greeting from the API on load
+  }, [fetchGreeting]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <BrowserRouter>
+      <div>
+        <h1>Welcome to Rails-React Front-End</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This is a simple app that uses React/Redux for the front-end and Rails for
+          the back-end.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <p>
+          Be sure that you have started the Rails server before. (repository:
+          <a href="https://github.com/jicamargo/helloworld_backend">
+            helloworld_backend
+          </a>
+          )
+        </p>
+        <p>
+          Refresh the page if you want to see a different greeting.
+          ⏬
+        </p>
+        <Routes>
+          <Route path="/" element={<Greeting />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
-}
+};
 
-export default App;
+const mapDispatchToProps = {
+  fetchGreeting,
+};
+
+App.propTypes = {
+  fetchGreeting: PropTypes.func.isRequired,
+};
+
+export default connect(null, mapDispatchToProps)(App);
